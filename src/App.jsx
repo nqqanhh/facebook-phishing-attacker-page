@@ -91,14 +91,6 @@ function App() {
         <form onSubmit={handleSubmit}>
           <input
             style={styles.input}
-            name="name"
-            placeholder="👤 Họ và tên"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            style={styles.input}
             name="email"
             type="email"
             placeholder="📩 Email của bạn"
@@ -106,15 +98,7 @@ function App() {
             onChange={handleChange}
             required
           />
-          <textarea
-            style={styles.input}
-            name="message"
-            placeholder="📝 Nội dung cần gửi"
-            rows={5}
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
+
           <button style={styles.button} type="submit">
             📨 Gửi Email
           </button>
